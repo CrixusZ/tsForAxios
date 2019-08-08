@@ -36,4 +36,9 @@ router.get('/simple/get', (req,res)=>{
   })
 })
 
+router.get('/base/get', function(req, res) {
+  // console.log(req.query)
+  res.json(req.query)
+})
+
 app.use(router)
